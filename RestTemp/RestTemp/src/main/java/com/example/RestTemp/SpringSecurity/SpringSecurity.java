@@ -38,7 +38,7 @@ public class SpringSecurity {
 
                 .authorizeHttpRequests(authRequst-> {
                     authRequst
-                            .requestMatchers("/**","/employes").authenticated();
+                            .requestMatchers("/**").authenticated();
 
                 });
         httpSecurity.formLogin(Customizer.withDefaults());
